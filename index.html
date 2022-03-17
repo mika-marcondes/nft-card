@@ -9,41 +9,81 @@
   <title>Frontend Mentor | NFT preview card component</title>
 
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .flex-container {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      width: 90vw;
+      height: 80%;
+      background-color: white;
+    }
 
     body {
       background-color: #0d192b;
     }
-    
+
+    /*mobile*/
     @media screen and (max-width: 375px){
       body {
         background-color: lightcoral;
       }
-      .attribution{
-        font-size: 50px;
-      }
       
+      .card {
+        width: 90%;
+      }
+
     }
-    
+
+    /*tablet*/
+    @media screen and (min-width: 375px) and (max-width: 768px){
+      body {
+        background-color: red;
+      }
+
+      .card {
+        width: 90%;
+      }
+
+    }
+
+    /*desktop*/
+    @media screen and (min-width: 769px){
+      body {
+        background-color: blue;
+      }
+
+      .card {
+        width: 90%;
+      }
+
+    }
+
   </style>
   
 </head>
 <body>
   
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
+  <div class="flex-container">
+    <div class="card"></div>
+  </div>
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Mika</a>.
   </div>
 </body>
 </html>
