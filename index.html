@@ -31,7 +31,9 @@
     .flex {
       display: flex;
       height: 4vh;
-      background-color: cornflowerblue;
+      margin: 0 8%;
+      justify-content: space-between;
+      align-items: center;
     }
 
     .card {
@@ -40,7 +42,6 @@
       margin: 10px;
       border-radius: 5%;
       background-color: #14253d;
-      
     }
 
     .img {
@@ -61,11 +62,28 @@
       font-size: 2.5vh;
       font-weight: 300;
       margin-left: 8%;
-      color: hsl(215, 51%, 70%);
+      color: #8bacda;
+    }
+
+    .txt3 {
+      font-size: 2.5vh;
+      font-weight: 600;
+      color: cyan;
+    }
+
+    .txt4 {
+      font-size: 2.5vh;
+      font-weight: 400;
+      color: #8bacda;
     }
 
     .icon {
-      margin-left: 8%;
+      height: 70%;
+      margin-right: 5px;
+    }
+
+    #test {
+      flex-grow: 1;
     }
 
     body {
@@ -73,32 +91,6 @@
       font-family: 'Outfit', sans-serif;
     }
 
-
-    /*mobile*/
-    @media screen and (max-width: 375px) {
-
-      /*body {*/
-      /*  background-color: lightcoral;*/
-      /*}*/
-
-    }
-
-    /*!*tablet*!*/
-    /*@media screen and (max-width: 768px) {*/
-    /*  body {*/
-    /*    background-color: red;*/
-    /*  }*/
-
-    /*}*/
-
-    /*!*desktop*!*/
-    /*@media screen and (max-width: 1440px){*/
-    /*  body {*/
-    /*    background-color: blue;*/
-    /*  }*/
-
-
-    /*}*/
 
   </style>
   
@@ -111,10 +103,12 @@
       <h1 class="txt1">Equilibrium #3429</h1>
       <p class="txt2">Our Equilibrium collection promotes balance and calm.</p>
       <div class="flex">
-        <img src="images/icon-ethereum.svg" class="icon"/>
+        <img src="images/icon-ethereum.svg" class="icon"/><p class="txt3">0.041 ETH</p>
+        <div id="test"></div>
+        <img src="images/icon-clock.svg" class="icon"><p class="txt4">3 days left</p>
+      </div>
       </div>
     </div>
-  </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
