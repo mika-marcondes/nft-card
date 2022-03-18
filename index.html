@@ -36,8 +36,13 @@
       align-items: center;
     }
 
+    #test {
+      margin-top: 8%;
+      justify-content: flex-start;
+    }
+
     .card {
-      height: 80vh;
+      height: 84vh;
       width: 50vh;
       margin: 10px;
       border-radius: 5%;
@@ -82,8 +87,21 @@
       margin-right: 5px;
     }
 
-    #test {
+    #space {
       flex-grow: 1;
+    }
+
+    .stroke {
+      margin: 4% 8%;
+      height: 1px;
+      background-color: #8bacda;
+    }
+
+    .pfp {
+      height: 5vh;
+      border: 1px solid white;
+      border-radius: 100%;
+      margin-right: 10px;
     }
 
     body {
@@ -96,7 +114,7 @@
   
 </head>
 <body>
-  
+
   <div class="flex-container">
     <div class="card">
       <img src="images/image-equilibrium.jpg" class="img" alt="Illustration of a box">
@@ -104,11 +122,15 @@
       <p class="txt2">Our Equilibrium collection promotes balance and calm.</p>
       <div class="flex">
         <img src="images/icon-ethereum.svg" class="icon"/><p class="txt3">0.041 ETH</p>
-        <div id="test"></div>
+        <div id="space"></div>
         <img src="images/icon-clock.svg" class="icon"><p class="txt4">3 days left</p>
       </div>
+      <div class="stroke"></div>
+      <div class="flex" id="test">
+        <img src="images/image-avatar.png" class="pfp"><p class="txt4">Creation of <span style="color: white">Jules Wyvern</span></p>
       </div>
-    </div>
+     </div>
+  </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
