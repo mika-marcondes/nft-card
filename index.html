@@ -36,7 +36,7 @@
       align-items: center;
     }
 
-    #test {
+    #align {
       margin-top: 8%;
       justify-content: flex-start;
     }
@@ -47,14 +47,33 @@
       margin: 10px;
       border-radius: 5%;
       background-color: #14253d;
+      box-shadow: 0 10px 50px 5px #08101a;
     }
 
     .img {
-      display: block;
-      margin: 8% auto;
-      width: 85%;
+      width: 100%;
       border-radius: 4%;
     }
+
+    .picture {
+      width: 85%;
+      height: 42vh;
+      margin: 8% auto;
+      border-radius: 4%;
+      background-color: #8bacda;
+    }
+
+    /*.overlay {*/
+    /*  position: absolute;*/
+    /*  !*top: 0;*!*/
+    /*  !*bottom: 0;*!*/
+    /*  !*left: 0;*!*/
+    /*  !*right: 0;*!*/
+    /*  width: 85%;*/
+    /*  height: 42vh;*/
+    /*  background-color: #8bacda;*/
+    /*  opacity: 1;*/
+    /*}*/
     
     .txt1 {
       font-size: 3vh;
@@ -117,7 +136,10 @@
 
   <div class="flex-container">
     <div class="card">
-      <img src="images/image-equilibrium.jpg" class="img" alt="Illustration of a box">
+      <div class="picture">
+        <img src="images/image-equilibrium.jpg" class="img" alt="Illustration of a box">
+        <div class="overlay"></div>
+      </div>
       <h1 class="txt1">Equilibrium #3429</h1>
       <p class="txt2">Our Equilibrium collection promotes balance and calm.</p>
       <div class="flex">
@@ -126,7 +148,7 @@
         <img src="images/icon-clock.svg" class="icon"><p class="txt4">3 days left</p>
       </div>
       <div class="stroke"></div>
-      <div class="flex" id="test">
+      <div class="flex" id="align">
         <img src="images/image-avatar.png" class="pfp"><p class="txt4">Creation of <span style="color: white">Jules Wyvern</span></p>
       </div>
      </div>
