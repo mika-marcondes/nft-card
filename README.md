@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [frontendmentor.io/solutions/nft-card-viewer](https://www.frontendmentor.io/solutions/nft-card-viewer-5niSYXwti)
+- Live Site URL: [mika-marcondes.github.io/nft-card/](https://mika-marcondes.github.io/nft-card/)
 
 ## My process 🔎
 
